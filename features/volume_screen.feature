@@ -21,21 +21,5 @@ Feature: User is able to convert Volume units
       |Currency|Currency|
 
 
-  @wip
-  Scenario Outline: User is able to convert Volume units into Tablespoon
-    When I swipe in the menu
-    And I select "Volume" from menu
-    And I land on "Volume" screen
-    And I select "<target>" from left column
-    And I select "Tablespoon" from right column
-    And I click on Clear button
-    And I enter "1" to From field
-    Then I get "<result>" in To field
-    Examples:
-      |target|result|
-      |Teaspoon     |0.3333    |
-      |Cup          |16        |
-      |Fluid Ounce (US)|2      |
-
 
 
